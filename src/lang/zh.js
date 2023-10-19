@@ -154,15 +154,6 @@ export default {
         //contractAddress: '合约地址',
         privateKey: '私钥',
         validatorPrivateKey: "请输入私钥",
-        from: '用户Id',
-        to: '合约地址',
-        transactionCount: '交易数量',
-        consensusNodeHash: '共识节点hash',
-        createTime: '创建时间',
-        nodeType: '节点类型',
-        pbftView:'pbft视图',
-        workState:'工作状态'
-
     },
     errorLog: {
         tips: '请点击右上角bug小图标',

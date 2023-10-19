@@ -35,7 +35,7 @@
           <span>input: </span>
           <div class="input-fix">
             <el-row>
-              <!-- <el-col
+              <el-col
                 :xs="24"
                 :sm="24"
                 :md="24"
@@ -44,7 +44,7 @@
               >
                 <span>function</span>
                 <span style="margin-left: 57px">{{ info.function }}</span>
-              </el-col> -->
+              </el-col>
               <el-col
                 :xs="24"
                 :sm="24"
@@ -59,10 +59,18 @@
             <el-col :xs="24" :sm="24" :md="24" :lg="24" style="display: flex">
               <span>data</span>
               <div style="width: 100%; margin: -12px 0 0 50px">
+<<<<<<< HEAD
+<<<<<<< HEAD
                 <el-table :data="tableData" 
                 style="width: 90% ;" 
                 max-height="150"
                 >
+=======
+                <el-table :data="tableData" style="width: 100%" >
+>>>>>>> parent of eb8b091 (1、修改英文table为中文)
+=======
+                <el-table :data="tableData" style="width: 100%" >
+>>>>>>> parent of eb8b091 (1、修改英文table为中文)
 
                   <el-table-column
                     v-for="(item,index) in datakey" :key="index"
@@ -183,6 +191,8 @@ export default {
     this.txInfo();
   },
   methods: {
+<<<<<<< HEAD
+<<<<<<< HEAD
     /*
     table 双击复制
     */
@@ -196,6 +206,10 @@ export default {
     //   document.execCommand("copy");//执行copy方法
     //   this.$message({ message: '复制成功', type: 'success' })//提示
     // },
+=======
+>>>>>>> parent of eb8b091 (1、修改英文table为中文)
+=======
+>>>>>>> parent of eb8b091 (1、修改英文table为中文)
     txInfo() {
 
       const arr = '0x' + this.transHash.blockNumber.toString(16)

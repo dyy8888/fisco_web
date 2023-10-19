@@ -40,7 +40,7 @@
                             <v-transaction-detail :transHash="scope.row"></v-transaction-detail>
                         </template>
                     </el-table-column>
-                    <el-table-column prop="hash" :label="$t('table.transactionHash')" align="center"
+                    <el-table-column prop="hash" :label="$t('transactionHash')" align="center"
                         :show-overflow-tooltip="true">
                         <template slot-scope="scope">
                             <span>
@@ -50,20 +50,20 @@
                             </span>
                         </template>
                     </el-table-column>
-                    <el-table-column prop="blockNumber" :label="$t('table.blockHeight')" width="260" align="center"
+                    <el-table-column prop="blockNumber" :label="$t('blockHeight')" width="260" align="center"
                         :show-overflow-tooltip="true">
                         <template slot-scope="scope">
                             <!-- 使用过滤器处理数字 -->
                             <span>{{ scope.row['blockNumber'] | blockNumber }}</span>
                         </template>
                     </el-table-column>
-                    <el-table-column prop="from" :label="$t('table.from')" width="280" :show-overflow-tooltip="true"
+                    <el-table-column prop="from" :label="$t('from')" width="280" :show-overflow-tooltip="true"
                         align="center">
                         <template slot-scope="scope">
                             <span>{{ scope.row['from'] }}</span>
                         </template>
                     </el-table-column>
-                    <el-table-column prop="to" :label="$t('table.to')" width="280" :show-overflow-tooltip="true" align="center">
+                    <el-table-column prop="to" :label="$t('to')" width="280" :show-overflow-tooltip="true" align="center">
                         <template slot-scope="scope">
                             <span>{{ scope.row['to'] }}</span>
                         </template>

@@ -8,12 +8,12 @@
           class="search-table-content"
           v-loading="loading"
         >
-          <el-table-column prop="nodeId" :label="$t('table.nodeId')" show-overflow-tooltip width="400">
+          <el-table-column prop="nodeId" label="NodeID" show-overflow-tooltip width="400">
           </el-table-column>
-          <el-table-column prop="type" :label="$t('table.nodeType')"> </el-table-column>
-          <el-table-column prop="kg" :label="$t('table.blockHeight')"> </el-table-column>
-          <el-table-column prop="view" :label="$t('table.pbftView')"> </el-table-column>
-          <el-table-column prop="stutas" :label="$t('table.workState')"> </el-table-column>
+          <el-table-column prop="type" label="NodeType"> </el-table-column>
+          <el-table-column prop="kg" label="BlockHeight"> </el-table-column>
+          <el-table-column prop="view" label="pbftView"> </el-table-column>
+          <el-table-column prop="stutas" label="WorkState"> </el-table-column>
 
           <!-- <el-table-column label="操作">
             <template slot-scope="scope">

@@ -30,13 +30,13 @@ permissions and * limitations under the License. */
       <div class="search-table" v-autoTableHeight="160">
         <el-table style="width: 100%" height="100%" :data="blockData" class="block-table-content" v-loading="loading"
           ref="refTable" @row-click="link">
-          <el-table-column prop="number" :label="$t('table.blockHeight')" width="140" align="center">
+          <el-table-column prop="number" :label="$t('BlockHeight')" width="140" align="center">
             <template slot-scope="scope">{{ scope.row && scope.row["number"] | filterBlockHeight }}</template>
           </el-table-column>
-          <el-table-column prop="total" :label="$t('table.transactionCount')" width="500" align="center">
+          <el-table-column prop="total" :label="$t('TransactionCount')" width="500" align="center">
 
           </el-table-column>
-          <el-table-column prop="sealer" :label="$t('table.consensusNodeHash')" :show-overflow-tooltip="true" align="center">
+          <el-table-column prop="sealer" :label="$t('ConsensusNodeHash')" :show-overflow-tooltip="true" align="center">
             <template slot-scope="scope">
               <span>
                 <i class="wbs-icon-copy font-12 copy-key" :title="$t('text.copyHash')"></i>
@@ -44,7 +44,7 @@ permissions and * limitations under the License. */
               </span>
             </template>
           </el-table-column>
-          <el-table-column prop="timestamp" :label="$t('table.createTime')" width="280" :show-overflow-tooltip="true"
+          <el-table-column prop="timestamp" :label="$t('CreateTime')" width="280" :show-overflow-tooltip="true"
             align="center">
             <template slot-scope="scope">{{ scope.row && scope.row["timestamp"] | filtersTimeStap }}</template>
           </el-table-column>
